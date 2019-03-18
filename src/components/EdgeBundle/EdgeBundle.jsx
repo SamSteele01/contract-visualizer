@@ -9,6 +9,8 @@ export default class EdgeBundle extends Component {
 
   static propTypes = {
     toggleBool: PropTypes.bool,
+    curveBeta: PropTypes.number,
+    clusterSize: PropTypes.number
   };
 
   constructor(props) {
@@ -50,13 +52,13 @@ export default class EdgeBundle extends Component {
     let radius = width / 2;
 
     let line = d3.radialLine()
-      .curve(d3.curveBundle.beta(.5))
+      .curve(d3.curveBundle.beta(this.props.curveBeta))
       .radius(d => d.y)
       .angle(d => d.x)
 
     let tree = d3.cluster()
       // .size([2* Math.PI, radius - 100])
-      .size([2 * Math.PI, radius - 100])
+      .size([this.props.clusterSize * Math.PI, radius - 100])
 
     // let chart = {
     // let stratData = d3.stratify()
