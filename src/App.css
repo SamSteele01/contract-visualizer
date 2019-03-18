@@ -33,8 +33,13 @@
   }
 }
 
-.container-edge-bundle {
+.edge-bundle-panel {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+}
+
+.contract-list {
+  padding: 20px;
+  background-color: #d2d2d2;
 }

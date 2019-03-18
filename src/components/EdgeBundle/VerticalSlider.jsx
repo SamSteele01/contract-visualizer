@@ -6,6 +6,9 @@ import Slider from '@material-ui/lab/Slider';
 const styles = {
   root: {
     display: 'flex',
+    flexDirection: 'column',
+    // flexGrow: 1,
+    justifyContent: 'center',
     alignItems: 'center',
     height: 300,
   },

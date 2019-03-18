@@ -40,8 +40,8 @@ export default class ContractList extends Component {
 
   render() {
     return (
-      <div>
-        ContractList !
+      <div className='contract-list'>
+        {/* ContractList ! */}
         {this.generateSingleContractCards()}
       </div>
     );
