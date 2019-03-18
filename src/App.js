@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import ContractList from './components/ContractList/ContractList';
 import EBpanel from './components/EdgeBundle/EBpanel';
-import { contractData } from './zeppelinContractData';
+import contractData from './contractData';
 
 import './App.css';
 
